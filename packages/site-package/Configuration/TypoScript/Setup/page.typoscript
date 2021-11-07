@@ -5,6 +5,33 @@ page {
       viewport = width=device-width, initial-scale=1
    }
 
+   config {
+      /* disableAllHeaderCode = 1 */
+   }
+
+   includeCSS {
+      styles = EXT:site-package/Resources/Public/Scss/Styles.css
+   }
+
+   bodyTagCObject = COA
+   bodyTagCObject {
+      10 = TEXT
+      10.value = <body id="page-{TSFE:page|uid}" class="
+      10.stdWrap.insertData = 1
+
+      20 < lib.templateName
+      20.stdWrap.wrap = be-layout-
+
+      30 = TEXT
+      30.stdWrap {
+         data = siteLanguage:twoLetterIsoCode
+         noTrimWrap = | language-||
+      }
+
+      100 = TEXT
+      100.value = ">
+   }
+
    10 = FLUIDTEMPLATE
    10 {
       #  <f:translate key="…" /> kommt ohne extensionName="…" aus
@@ -22,7 +49,6 @@ page {
          }
       }
 
-      # Pfade für die Templates
       layoutRootPaths {
          10 = EXT:site-package/Resources/Private/Layouts/Page/
       }
@@ -35,7 +61,6 @@ page {
          10 = EXT:site-package/Resources/Private/Partials/Page/
       }
 
-      # Datenprozessoren für die Menüs
       dataProcessing {
          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
          10 {
@@ -63,29 +88,4 @@ page {
          }
       }
    }
-   
-   includeCSS {
-   }
-
-   includeJSFooterlibs {
-   }
-
-   bodyTagCObject = COA
-   bodyTagCObject {
-      10 = TEXT
-      10 {
-         value = <body id="page-{TSFE:page|uid}" class="
-         stdWrap.insertData = 1
-      }
-
-      20 = TEXT
-      20.stdWrap {
-         data = siteLanguage:twoLetterIsoCode
-         noTrimWrap = | language-||
-      }
-
-      100 = TEXT
-      100.value = ">
-   }
-
 }
