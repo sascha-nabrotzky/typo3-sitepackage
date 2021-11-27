@@ -1,0 +1,98 @@
+TCEFORM {
+    tt_content {
+        tx_container_parent {
+            types {
+
+            }
+        }
+
+        layout {
+            # Remove default layouts
+            removeItems = 0,1,2,3
+            addItems {
+                # Define a new named default layout
+                default = Default
+            }
+
+            types {
+                
+            }
+        }
+
+        frame_class {
+            removeItems = ruler-before, ruler-after, indent, indent-left, indent-right, none
+
+            types {
+                
+            }
+        }
+
+        space_before_class {
+            removeItems = extra-small
+        }
+
+        space_after_class {
+            removeItems = extra-small
+        }
+
+        sectionIndex {
+            types {
+                
+            }
+        }
+
+        linkToTop {
+            types {
+               
+            }
+        }
+
+        sys_language_uid {
+            types {
+
+            }
+        }
+
+        hidden {
+            types {
+#
+            }
+        }
+
+        starttime {
+            types {
+
+            }
+        }
+
+        endtime {
+            types {
+
+            }
+        }
+
+        fe_group {
+            types {
+
+            }
+        }
+
+        editlock {
+            types {
+
+            }
+        }
+
+        categories {
+            types {
+
+            }
+        }
+
+        rowDescription {
+            types {
+
+            }
+        }
+    }
+}
