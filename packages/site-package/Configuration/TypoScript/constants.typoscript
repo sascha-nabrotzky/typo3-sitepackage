@@ -1,4 +1,1 @@
-themes.configuration.menu.footer.containerPid = 5
-
-# cat=content; type=string; label=Frontend Developer Text in footer
-developer-text = Frontend-Entwicklung | Sascha Nabrotzky
+@import 'EXT:site-package/Configuration/TypoScript/Constants/*.typoscript'
