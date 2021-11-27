@@ -1,2 +1,2 @@
-@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
-@import 'EXT:site-package/Configuration/TypoScript/Setup/*.typoscript'
+@import 'EXT:site-package/Configuration/TypoScript/Library/*.typoscript'
+@import 'EXT:site-package/Configuration/TypoScript/Library/ContentElements/*.typoscript'
