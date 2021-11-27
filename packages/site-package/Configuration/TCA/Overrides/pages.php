@@ -9,7 +9,9 @@ call_user_func(function()
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $extensionKey,
-        'Configuration/TsConfig/Page/page.tsconfig',
+        'Configuration/TSconfig/import.tsconfig',
         'site-package'
     );
 });
+
+# Diese Datei (pages.php) meldet import.tsconfig im BE an, dort dann auswählen
