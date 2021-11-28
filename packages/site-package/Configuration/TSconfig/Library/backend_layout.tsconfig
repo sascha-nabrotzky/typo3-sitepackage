@@ -4,8 +4,8 @@ mod.web_layout.BackendLayouts {
     icon = EXT:site-package/Resources/Public/Icons/Default_BE_Layout.svg
     config {
       backend_layout {
-        rowCount = 3
         colCount = 1
+        rowCount = 3
         rows {
           1 {
             columns {

@@ -7,12 +7,18 @@
   <f:layout name="Default" />
 
   <f:section name="Main">
+    <f:debug>{_all}</f:debug>
     <main data-layout="{current}">
       <div>Seitentitel: {data.title}</div>
-      <div>Content</div>
-      <f:cObject typoscriptObjectPath="feature" />
-      <f:cObject typoscriptObjectPath="main" />
-      <f:cObject typoscriptObjectPath="extended" />
+      <section>
+        <f:cObject typoscriptObjectPath="feature" />
+      </section>
+      <section>
+        <f:cObject typoscriptObjectPath="main" />
+      </section>
+      <section>
+        <f:cObject typoscriptObjectPath="extended" />
+      </section>
     </main>
   </f:section>
 </html>

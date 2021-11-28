@@ -8,10 +8,10 @@ TCEFORM {
 
         layout {
             # Remove default layouts
-            removeItems = 0,1,2,3
+            /* removeItems = 0,1,2,3 */
             addItems {
                 # Define a new named default layout
-                default = Default
+                /* default = Default */
             }
 
             types {
@@ -20,7 +20,7 @@ TCEFORM {
         }
 
         frame_class {
-            removeItems = ruler-before, ruler-after, indent, indent-left, indent-right, none
+            /* removeItems = ruler-before, ruler-after, indent, indent-left, indent-right, none */
 
             types {
                 
@@ -28,11 +28,11 @@ TCEFORM {
         }
 
         space_before_class {
-            removeItems = extra-small
+            /* removeItems = extra-small */
         }
 
         space_after_class {
-            removeItems = extra-small
+            /* removeItems = extra-small */
         }
 
         sectionIndex {

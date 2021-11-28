@@ -1,14 +1,15 @@
-
-tt_content.ot_text =< lib.contentElement
-tt_content.ot_text {
-  templateName = SnText
-  templateRootPaths {
-    30 = EXT:sn_text/Resources/Private/Templates/
-  }
-  layoutRootPaths {
-    30 = EXT:sn_text/Resources/Private/Layouts/
-  }
-  partialRootPaths {
-    30 = EXT:sn_text/Resources/Private/Partials/
+tt_content {
+  sn_text =< lib.contentElement
+  sn_text {
+    templateName = SnText
+    templateRootPaths {
+      10 = EXT:sn_text/Resources/Private/Templates/
+    }
+    layoutRootPaths {
+      10 = EXT:sn_text/Resources/Private/Layouts/
+    }
+    partialRootPaths {
+      10 = EXT:sn_text/Resources/Private/Partials/
+    }
   }
 }

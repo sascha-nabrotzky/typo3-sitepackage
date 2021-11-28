@@ -1,8 +1,8 @@
 <?php
-$EM_CONF['site-package'] = [
+$EM_CONF[$_EXTKEY] = [
     'title' => 'site-package',
     'description' => 'Dies ist die Beschreibung des site-package',
-    'category' => 'templates',
+    'category' => 'frontend',
     'author' => 'Sascha Nabrotzky',
     'author_email' => 'sascha.nabrotzky@online.de',
     'author_company' => 'Sascha Nabrotzky',
