@@ -5,9 +5,9 @@
   data-namespace-typo3-fluid="true"
 >
   <f:spaceless>
-    <f:render partial="Navigation" arguments="{_all}" />
-    <f:render partial="Header" arguments="{_all}" />
-    <f:render section="Main" />
-    <f:render partial="Footer" arguments="{_all}" />
+    <f:render partial="Navigation" section="Main" arguments="{_all}" />
+    <f:render partial="Header" section="Main" arguments="{_all}" />
+    <f:render section="Main" arguments="{_all}" />
+    <f:render partial="Footer" section="Main" arguments="{_all}" />
   </f:spaceless>
 </html>

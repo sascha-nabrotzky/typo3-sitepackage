@@ -11,13 +11,32 @@
     <main data-layout="{current}">
       <div>Seitentitel: {data.title}</div>
       <section>
-        <f:cObject typoscriptObjectPath="feature" />
+        <f:for each="{feature}" as="contentElement">
+          <button>{contentElement.data.CType}</button>
+          <f:cObject
+            typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+            data="{contentElement.data}"
+            table="tt_content"
+          />
+        </f:for>
       </section>
       <section>
-        <f:cObject typoscriptObjectPath="main" />
+        <f:for each="{main}" as="contentElement">
+          <f:cObject
+            typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+            data="{contentElement.data}"
+            table="tt_content"
+          />
+        </f:for>
       </section>
       <section>
-        <f:cObject typoscriptObjectPath="extended" />
+        <f:for each="{extended}" as="contentElement">
+          <f:cObject
+            typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+            data="{contentElement.data}"
+            table="tt_content"
+          />
+        </f:for>
       </section>
     </main>
   </f:section>

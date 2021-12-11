@@ -86,6 +86,30 @@ page {
             entryLevel = 0
             includeNotInMenu = 0
          }
+
+         40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+			40 {
+				as = feature
+				table = tt_content
+				orderBy = sorting
+				where = {#colPos}=0
+			}
+
+         50 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+			50 {
+				as = main
+				table = tt_content
+				orderBy = sorting
+				where = {#colPos}=1
+			}
+
+         60 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+			60 {
+				as = extended
+				table = tt_content
+				orderBy = sorting
+				where = {#colPos}=2
+			}
       }
 
       settings {
@@ -94,52 +118,4 @@ page {
          }
       }
    }
-}
-
-# The CONTENT object executes a database query and loads the content.
-main = CONTENT
-main.table = tt_content
-main.select {
-
-   # "sorting" is a column from the tt_content table and
-   # keeps track of the sorting order, which was specified in
-   # the backend.
-   orderBy = sorting
-
-   # Only select content from column "0" (the column called
-   # "normal") and quote the database identifier (column name)
-   # "colPos" (indicated by wrapping with {#})
-   where = {#colPos}=1
-}
-
-# For every result line from the database query (that means for every content
-# element) the renderObj is executed and the internal data array is filled
-# with the content. This ensures that we can call the .field property and we
-# get the according value.
-main.renderObj = COA
-main.renderObj {
-
-   10 = TEXT
-   # The field tt_content.header normally holds the headline.
-   10.stdWrap.field = header
-   10.stdWrap.wrap = <h1>|</h1>
-
-   20 = TEXT
-   20.stdWrap.field = subheader
-   20.stdWrap.wrap = <h2>|</h2>
-
-   30 = TEXT
-   # The field tt_content.bodytext holds the content text.
-   30.stdWrap.field = bodytext
-   30.stdWrap.wrap = <p>|</p>
-}
-
-feature < main
-feature {
-   select.where = {#colPos}=0
-}
-
-extended < feature
-extended {
-   select.where = {#colPos}=2
 }
