@@ -5,13 +5,12 @@ page {
       viewport = width=device-width, initial-scale=1
    }
 
-   # Text von Typo3 ausblenden, gab aber Probleme
-   config {
-      /* disableAllHeaderCode = 1 */
+   includeCSS {
+      styles = EXT:site-package/Resources/Public/Css/styles.css
    }
 
-   includeCSS {
-      styles = EXT:site-package/Resources/Public/Scss/Styles.css
+   includeJSFooterlibs {
+      bootstrap = 
    }
 
    bodyTagCObject = COA

@@ -7,9 +7,9 @@
   <f:layout name="Default" />
 
   <f:section name="Main">
-    <main data-layout="{current}">
+    <main class="container" data-layout="{current}">
       <div>Seitentitel: {data.title}</div>
-      <section>
+      <section class="col-4">
         <f:for each="{feature}" as="contentElement">
           <button>{contentElement.data.CType}</button>
           <f:cObject
@@ -19,7 +19,7 @@
           />
         </f:for>
       </section>
-      <section>
+      <section class="col-4">
         <f:for each="{main}" as="contentElement">
           <f:cObject
             typoscriptObjectPath="tt_content.{contentElement.data.CType}"
@@ -28,7 +28,7 @@
           />
         </f:for>
       </section>
-      <section>
+      <section class="col-4">
         <f:for each="{extended}" as="contentElement">
           <f:cObject
             typoscriptObjectPath="tt_content.{contentElement.data.CType}"
