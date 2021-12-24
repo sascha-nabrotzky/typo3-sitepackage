@@ -5,6 +5,8 @@
   data-namespace-typo3-fluid="true"
 >
   <f:if condition="{data.tx_mask_simple_text}">
-    {data.tx_mask_simple_text -> f:format.nl2br()}
+    <div>
+      <p>{data.tx_mask_simple_text -> f:format.nl2br()}</p>
+    </div>
   </f:if>
 </html>

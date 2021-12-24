@@ -15,6 +15,10 @@ page {
       bootstrap = EXT:site-package/Resources/Public/JavaScript/bootstrap.bundle.min.js
    }
 
+   includeJSFooter {
+      scrolltoanchor = EXT:site-package/Resources/Public/JavaScript/scrolltoanchor.js
+   }
+
    bodyTagCObject = COA
    bodyTagCObject {
       10 = TEXT

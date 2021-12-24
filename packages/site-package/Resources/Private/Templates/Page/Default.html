@@ -7,12 +7,12 @@
   <f:layout name="Default" />
 
   <f:section name="Main">
-    <f:debug>{_all}</f:debug>
     <main data-layout="{current}">
       <div>Seitentitel: {data.title}</div>
-      <section>
+      <section class="container my-5">
+        <button class="btn btn-primary me-2 mb-4">c37</button>
+        <button class="btn btn-primary me-2 mb-4">c38</button>
         <f:for each="{feature}" as="contentElement">
-          <button>{contentElement.data.CType}</button>
           <f:cObject
             typoscriptObjectPath="tt_content.{contentElement.data.CType}"
             data="{contentElement.data}"
@@ -20,7 +20,7 @@
           />
         </f:for>
       </section>
-      <section>
+      <section class="container my-5">
         <f:for each="{main}" as="contentElement">
           <f:cObject
             typoscriptObjectPath="tt_content.{contentElement.data.CType}"
@@ -29,7 +29,7 @@
           />
         </f:for>
       </section>
-      <section>
+      <section class="container my-5">
         <f:for each="{extended}" as="contentElement">
           <f:cObject
             typoscriptObjectPath="tt_content.{contentElement.data.CType}"
