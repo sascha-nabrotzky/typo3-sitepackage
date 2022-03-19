@@ -1,0 +1,47 @@
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  lang="en"
+  data-namespace-typo3-fluid="true"
+>
+  <f:layout name="Default" />
+
+  <f:section name="Main">
+    <main data-layout="{current}">
+      <h1>Seitentitel: {data.title}</h1>
+      <section class="container my-5">
+        <f:for each="{feature}" as="contentElement">
+          <f:cObject
+            typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+            data="{contentElement.data}"
+            table="tt_content"
+          />
+        </f:for>
+
+        <f:for each="{files}" as="image">
+          <f:image image="{image}" cropVariant="hero" width="500" />
+        </f:for>
+      </section>
+
+      <section class="container my-5">
+        <f:for each="{main}" as="contentElement">
+          <f:cObject
+            typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+            data="{contentElement.data}"
+            table="tt_content"
+          />
+        </f:for>
+      </section>
+
+      <section class="container my-5">
+        <f:for each="{extended}" as="contentElement">
+          <f:cObject
+            typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+            data="{contentElement.data}"
+            table="tt_content"
+          />
+        </f:for>
+      </section>
+    </main>
+  </f:section>
+</html>

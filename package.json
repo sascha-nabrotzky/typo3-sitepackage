@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "sass": "^1.49.8"
+  },
+  "scripts": {
+    "test": "test",
+    "sass-watch": "sass --watch --style=compressed --load-path=node_modules/bootstrap/scss ./packages/site-package/Resources/Private/Scss/import.scss ./packages/site-package/Resources/Public/Css/styles.css"
+  }
+}

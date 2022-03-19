@@ -1,0 +1,2 @@
+@import 'EXT:site-package/Configuration/TypoScript/Library/*.typoscript'
+@import 'EXT:site-package/Configuration/TypoScript/Library/ContentElements/*.typoscript'

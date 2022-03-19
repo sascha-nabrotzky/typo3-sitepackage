@@ -1,0 +1,4 @@
+@import 'EXT:site-package/Configuration/TSconfig/Library/*.tsconfig'
+@import 'EXT:site-package/Configuration/TSconfig/ContentElements/*.tsconfig'
+
+# import.tsconfig dient nur als Verweis auf TSconfig-Ordner in denen BE-Konfigurationen liegen
