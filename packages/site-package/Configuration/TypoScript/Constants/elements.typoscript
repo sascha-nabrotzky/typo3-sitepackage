@@ -1,4 +1,5 @@
+# cat=content; type=string; label=Kontainer für Footer-Menü
 themes.configuration.menu.footer.containerPid = 5
 
 # cat=content; type=string; label=Frontend Developer Text in footer
-developer-text = Frontend-Entwicklung | Sascha Nabrotzky
+developer-text = Web-Entwicklung | Sascha Nabrotzky

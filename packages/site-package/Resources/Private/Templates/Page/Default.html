@@ -18,8 +18,9 @@
           />
         </f:for>
 
-        <f:for each="{files}" as="image">
+        <f:for each="{feature.0.files}" as="image">
           <f:image image="{image}" cropVariant="hero" width="500" />
+          Bild aus cObject: Images only mit Crop
         </f:for>
       </section>
 
@@ -31,7 +32,9 @@
             table="tt_content"
           />
         </f:for>
+        <button class="btn btn-primary">c6</button>
       </section>
+
       <section class="container my-5">
         <f:for each="{extended}" as="contentElement">
           <f:cObject
