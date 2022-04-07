@@ -98,13 +98,14 @@ page {
 				table = tt_content
 				orderBy = sorting
 				where = {#colPos}=0
-			}
-         40.dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-               references.fieldName = image
+
+            dataProcessing {
+               10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+               10 {
+                  references.fieldName = image
+               }
             }
-         }
+			}
 
          50 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
 			50 {

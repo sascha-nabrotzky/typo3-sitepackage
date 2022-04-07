@@ -13,7 +13,9 @@
 		"sort-packages": true
 	},
 	"require": {
+		"georgringer/news": "^9.3",
 		"helhum/typo3-console": "^7.0.2",
+		"saschanabrotzky/sn-text": "^1.0",
 		"test/site-package": "^1.0",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
