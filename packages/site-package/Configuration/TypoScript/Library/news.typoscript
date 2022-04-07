@@ -1,0 +1,21 @@
+#If needed, multiple fallbacks can be defined with TypoScript setup:
+
+plugin.tx_news {
+   view {
+      templateRootPaths >
+      templateRootPaths {
+         10 = EXT:site-package/Resources/Private/Extensions/News/Templates/
+         20 = {$plugin.tx_news.view.templateRootPath}
+      }
+      partialRootPaths >
+      partialRootPaths {
+         10 = EXT:site-package/Resources/Private/Extensions/News/Partials/
+         20 = {$plugin.tx_news.view.partialRootPath}
+      }
+      layoutRootPaths >
+      layoutRootPaths {
+         10 = EXT:site-package/Resources/Private/Extensions/News/Layouts/
+         20 = {$plugin.tx_news.view.layoutRootPath}
+      }
+   }
+}

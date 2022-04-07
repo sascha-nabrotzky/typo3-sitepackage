@@ -1,0 +1,11 @@
+# News-Extension: In the most common case, where you want to override the standard news 
+# template with your own templates you can use the TypoScript constants 
+# to set the paths:
+
+plugin.tx_news {
+   view {
+      templateRootPath = EXT:site-package/Resources/Private/Extensions/News/Templates/
+      partialRootPath = EXT:site-package/Resources/Private/Extensions/News/Partials/
+      layoutRootPath = EXT:site-package/Resources/Private/Extensions/News/Layouts/
+   }
+}
