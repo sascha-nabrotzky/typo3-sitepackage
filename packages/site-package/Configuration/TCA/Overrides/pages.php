@@ -13,11 +13,4 @@ call_user_func(function()
         'Configuration/TSconfig/import.tsconfig',
         'site-package'
     );
-
-    # Add an entry in the static template list found in sys_templates for static TS
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-        $extensionKey,
-        'Configuration/TypoScript/*.typoscript',
-        'site-package'
-        );
 });

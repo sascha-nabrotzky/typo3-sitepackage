@@ -8,6 +8,10 @@
 
   <f:section name="Main">
     <f:debug>{_all}</f:debug>
-    <div class="{CType}">Halllooo {data.bodytext -> f:format.html()}</div>
+    <div class="{CType}">
+      <h2>{data.header -> f:format.raw()}</h2>
+      <h3>{data.subheader -> f:format.raw()}</h3>
+      {data.bodytext -> f:format.raw()}
+    </div>
   </f:section>
 </html>

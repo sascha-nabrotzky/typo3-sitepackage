@@ -8,7 +8,7 @@ call_user_func(function () {
         'content-sn-text',
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
         [
-            'source'     => 'EXT:sn_text/Resources/Public/Icons/Extension.svg'
+            'source' => 'EXT:sn_text/Resources/Public/Icons/Extension.svg'
         ]
     );
 
