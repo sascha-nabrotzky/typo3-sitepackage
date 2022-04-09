@@ -7,8 +7,7 @@
   <f:layout name="Default" />
 
   <f:section name="Main">
-    <f:debug>{_all}</f:debug>
-    <div class="{CType}">
+    <div class="{data.CType}">
       <h2>{data.header -> f:format.raw()}</h2>
       <h3>{data.subheader -> f:format.raw()}</h3>
       {data.bodytext -> f:format.raw()}

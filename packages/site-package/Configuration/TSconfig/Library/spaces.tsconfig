@@ -1,5 +1,17 @@
+# Wird als Klasse mit frame-space-before-... gerendert
 TCEFORM.tt_content {
     space_before_class {
+        removeItems = extra-small
+        addItems {
+            Abstand1 = Abstand1
+            Abstand2 = Abstand2
+            Abstand3 = Abstand3
+        }
+    }
+}
+
+TCEFORM.tt_content {
+    space_after_class {
         removeItems = extra-small
         addItems {
             Abstand1 = Abstand1

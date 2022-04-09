@@ -1,0 +1,10 @@
+#Layout lässt nur Zahlen als Objekt zu
+TCEFORM.tt_content {
+    layout {
+        removeItems = 1,2,3
+        addItems {
+            4 = zweispaltig
+            5 = dreispaltig
+        }
+    }
+}
