@@ -15,22 +15,22 @@ call_user_func(function () {
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
         '
-mod.wizards.newContentElement.wizardItems.common {
-    elements {
-        sn_text {
-            iconIdentifier = content-sn-text
-            # LLL:EXT:sn_text/Resources/Private/Language/Tca.xlf:yourextensionkey_newcontentelement.wizard.title
-            title = einfacher Text
-            description = Einfacher Text als Basis
-            # LLL:EXT:sn_text/Resources/Private/Language/Tca.xlf:yourextensionkey_newcontentelement.wizard.description
-            tt_content_defValues {
-                CType = sn_text
-                header_layout = 100
+        mod.wizards.newContentElement.wizardItems.common {
+            elements {
+                sn_text {
+                    iconIdentifier = content-sn-text
+                    # LLL:EXT:sn_text/Resources/Private/Language/Tca.xlf:yourextensionkey_newcontentelement.wizard.title
+                    title = einfacher Text
+                    description = Einfacher Text als Basis
+                    # LLL:EXT:sn_text/Resources/Private/Language/Tca.xlf:yourextensionkey_newcontentelement.wizard.description
+                    tt_content_defValues {
+                        CType = sn_text
+                        header_layout = 100
+                    }
+                }
             }
+            show := addToList(sn_text)
         }
-    }
-    show := addToList(sn_text)
-}
-    '
+        '
     );
 });
