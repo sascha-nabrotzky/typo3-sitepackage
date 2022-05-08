@@ -8,10 +8,10 @@
 <f:section name="Main">
   <nav>
     <f:if condition="{menuMain}">
-      <ul class="nav">
+      <ul class="nav-list">
           <f:for each="{menuMain}" as="item">
             <li class="nav-item">
-                <a class="nav-link" href="{item.link}" {f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}">
+                <a class="" href="{item.link}" {f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}">
                   <span>{item.title}</span>
                 </a>
             </li>

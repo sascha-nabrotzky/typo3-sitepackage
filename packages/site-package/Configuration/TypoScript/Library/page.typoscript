@@ -6,13 +6,11 @@ page {
    }
 
    includeCSS {
-      // Compiliertes CSS von Sass, wenn Datei nicht komprimiert dann einmal löschen
-      styles = EXT:site-package/Resources/Public/Css/styles.css
+      styles = EXT:site-package/Resources/Public/Css/output.css
    }
 
    includeJSFooterlibs {
-      // Bootstrap.bundle wurde manuell in das site-package kopiert
-      bootstrap = EXT:site-package/Resources/Public/JavaScript/bootstrap.bundle.min.js
+      tailwindcss = 
    }
 
    includeJSFooter {

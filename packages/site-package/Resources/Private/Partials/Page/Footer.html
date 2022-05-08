@@ -8,10 +8,10 @@
   <footer>
     <nav>
       <f:if condition="{menuFooter}">
-        <ul class="nav">
+        <ul class="">
             <f:for each="{menuFooter}" as="item">
-              <li class="nav-item">
-                  <a class="nav-link" href="{item.link}" {f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}">
+              <li class="">
+                  <a class="" href="{item.link}" {f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}">
                     <span>{item.title}</span>
                   </a>
               </li>
