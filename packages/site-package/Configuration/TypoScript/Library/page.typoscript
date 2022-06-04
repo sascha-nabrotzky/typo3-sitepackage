@@ -10,7 +10,6 @@ page {
    }
 
    includeJSFooterlibs {
-      tailwindcss = 
    }
 
    includeJSFooter {

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "test",
-    "css-watch": "npx tailwindcss -i packages/site-package/Resources/Public/Css/styles.css -o packages/site-package/Resources/Public/Css/output.css --watch"
+    "css-watch": "tailwindcss -i packages/site-package/Resources/Public/Css/styles.css -o packages/site-package/Resources/Public/Css/output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.0.24"

@@ -1,6 +1,7 @@
 <html
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:sn="http://typo3.org/ns/typo3conf/ext/site-package/ViewHelpers"
   lang="en"
   data-namespace-typo3-fluid="true"
 >
@@ -8,8 +9,9 @@
 
   <f:section name="Main">
     <main data-layout="{current}">
-      <h1>Seitentitel: {data.title}</h1>
+      <h1 class="text-3xl font-bold">Seitentitel: {data.title}</h1>
       <section class="p-6 bg-gray-400">
+        <sn:LoremIpsum />
         <f:for each="{feature}" as="contentElement">
           <f:cObject
             typoscriptObjectPath="tt_content.{contentElement.data.CType}"
