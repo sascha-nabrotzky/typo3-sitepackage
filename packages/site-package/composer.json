@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "test\\site-package\\": "Classes/"
+      "Test\\SitePackage\\": "Classes/"
     }
   }
 }
