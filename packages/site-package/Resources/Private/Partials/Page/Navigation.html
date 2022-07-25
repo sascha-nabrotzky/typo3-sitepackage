@@ -6,11 +6,11 @@
 >
 
 <f:section name="Main">
-  <nav>
+  <nav class="bg-white shadow">
     <f:if condition="{menuMain}">
-      <ul class="nav-list">
+      <ul class="md:flex md:justify-center">
           <f:for each="{menuMain}" as="item">
-            <li class="nav-item">
+            <li class="text-xl hover:text-cyan-500 duration-100 p-3">
                 <a class="" href="{item.link}" {f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}">
                   <span>{item.title}</span>
                 </a>

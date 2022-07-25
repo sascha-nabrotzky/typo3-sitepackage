@@ -24,7 +24,7 @@
         </f:for>
       </section>
 
-      <section class="bg-gray-600">
+      <section class="p-6 bg-gray-600">
         <f:for each="{main}" as="contentElement">
           <f:cObject
             typoscriptObjectPath="tt_content.{contentElement.data.CType}"
@@ -32,7 +32,11 @@
             table="tt_content"
           />
         </f:for>
-        <button class="">c6</button>
+        <button
+          class="px-6 py-3 bg-cyan-800 text-white/75 rounded-lg hover:bg-cyan-900"
+        >
+          c10
+        </button>
       </section>
 
       <section class="">

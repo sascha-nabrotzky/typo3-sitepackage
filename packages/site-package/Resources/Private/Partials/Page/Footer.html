@@ -8,9 +8,9 @@
   <footer>
     <nav>
       <f:if condition="{menuFooter}">
-        <ul class="">
+        <ul class="md:flex">
             <f:for each="{menuFooter}" as="item">
-              <li class="">
+              <li class="p-3 text-gray-700 hover:text-gray-500 duration-100">
                   <a class="" href="{item.link}" {f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}">
                     <span>{item.title}</span>
                   </a>

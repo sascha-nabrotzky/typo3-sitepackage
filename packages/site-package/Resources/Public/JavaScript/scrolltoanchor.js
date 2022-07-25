@@ -1,6 +1,6 @@
 "use strict";
 
-const buttons = document.querySelectorAll(".btn-primary");
+const buttons = document.querySelectorAll("button");
 
 buttons.forEach((element) => {
   element.addEventListener("click", scrollToElement);
